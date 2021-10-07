@@ -31,13 +31,10 @@ public class Book implements Serializable {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int bookId;
 	@NotNull
-	@Size(min=5, message="Book name must be at least 5 character long")
 	private String bookName;
 	@NotNull
-	@Size(min=5, message="Author must be at least 5 character long")
 	private String author;
 	@NotNull
-	@Size(min=13, message="ISBN must be at least 13 number long")
 	private String isbn;
 	
 	
