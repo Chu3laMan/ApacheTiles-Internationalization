@@ -11,11 +11,10 @@
 <title><tiles:insertAttribute name="title" /></title>
 </head>
 <body>
-<a href="?language=en" >English</a>|<a href="?language=fr"
->French</a><br>
+<div class="top-right"><a href="?language=en" >English</a>|<a href="?language=fr"
+>French</a></div><br>
 <spring:message code="addBook.title" /><br>
- <!-- <tiles:insertAttribute name="header" /> -->
-<hr />
+ <tiles:insertAttribute name="header" /> 
 <form:form method="POST" modelAttribute="newBook" >
 
 <spring:message code="addBook.form.label.bookName" />

@@ -11,8 +11,7 @@
 <title><tiles:insertAttribute name="title" /></title>
 </head>
 <body>
-<a href="?language=en" >English</a>|<a href="?language=fr"
->French</a><br>
+ <tiles:insertAttribute name="header" /> 
 
     <table>
             <thead>
