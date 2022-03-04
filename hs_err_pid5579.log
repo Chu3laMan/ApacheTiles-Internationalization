@@ -1,0 +1,21 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f6785125437, pid=5579, tid=5585
+#
+# JRE version: OpenJDK Runtime Environment (11.0.13+8) (build 11.0.13+8-Ubuntu-0ubuntu1.20.04)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.13+8-Ubuntu-0ubuntu1.20.04, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# J 1168 c1 java.nio.DirectIntBufferU.get(I)I java.base@11.0.13 (29 bytes) @ 0x00007f6785125437 [0x00007f67851253c0+0x0000000000000077]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P %E" (or dumping to /home/chu3la/Documents/ApacheTiles-Internationalization/core.5579)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:43137 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=37753 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost -Dspring.jmx.enabled=true -Dspring.application.admin.enabled=true -Djava.security.egd=file:/dev/./urandom -XX:TieredStopAtLevel=1 -Dspring.boot.project.name=LegumeProject -javaagent:/home/chu3la/eclipse/jee-2021-06/eclipse/configuration/org.eclipse.osgi/410/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 com.example.demo.TilesWithSpringBootApplication
+
+Host: 

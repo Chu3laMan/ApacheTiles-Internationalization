@@ -8,17 +8,43 @@
 
 	<definition name="addBook" template="/WEB-INF/jsp/addBook.jsp">
 		<put-attribute name="title" value="Add new book" />
-		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
-		<put-attribute name="body" value="/WEB-INF/tiles/body.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+		<put-attribute name="header" value="/WEB-INF/layouts/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/layouts/body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
 	</definition>
 	
 	
-	<definition name="books" template="/WEB-INF/jsp/books.jsp">
+	<definition name="home" template="/WEB-INF/jsp/home.jsp">
 		<put-attribute name="title" value="All Books available in the Shop Book" />
-		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
-		<put-attribute name="body" value="/WEB-INF/tiles/body.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+		<put-attribute name="header" value="/WEB-INF/layouts/customertemplate/header.jsp" />
+		<put-attribute name="aside" value="/WEB-INF/layouts/customertemplate/aside.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/customertemplate/footer.jsp" />
 	</definition>
+	
+	
+	<definition name="layout" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="All Books available in the Shop Book" />
+		<put-attribute name="header" value="/WEB-INF/layouts/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/layouts/body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+	</definition>
+	
+	<definition name="customer-register" template="/WEB-INF/jsp/customer-register.jsp">
+		<put-attribute name="title" value="All Books available in the Shop Book" />
+		<put-attribute name="header" value="/WEB-INF/layouts/customertemplate/header-2.jsp" />
+		<put-attribute name="aside" value="/WEB-INF/layouts/customertemplate/aside.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/customertemplate/footer.jsp" />
+	</definition>
+	
+	
+	<definition name="qr-verification" template="/WEB-INF/jsp/qr-verification.jsp">
+		<put-attribute name="title" value="All Books available in the Shop Book" />
+		<put-attribute name="header" value="/WEB-INF/layouts/customertemplate/qrcode-header.jsp" />
+		<put-attribute name="aside" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/customertemplate/footer.jsp" />
+	</definition>
+	
+	
+	
 	
 </tiles-definitions>
