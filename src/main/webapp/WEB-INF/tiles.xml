@@ -38,7 +38,7 @@
 	
 	
 	<definition name="qr-verification" template="/WEB-INF/jsp/qr-verification.jsp">
-		<put-attribute name="title" value="All Books available in the Shop Book" />
+		<put-attribute name="title" value="QR CODE VERIFICATION" />
 		<put-attribute name="header" value="/WEB-INF/layouts/customertemplate/qrcode-header.jsp" />
 		<put-attribute name="aside" value="" />
 		<put-attribute name="footer" value="/WEB-INF/layouts/customertemplate/footer.jsp" />

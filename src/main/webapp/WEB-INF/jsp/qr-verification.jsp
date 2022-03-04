@@ -42,9 +42,11 @@ img {
 
 <img id="qr" src="<c:url value="/customer-panel${qrCodeContent}"> </c:url>" alt="image" style = "width:20%;"/>
 <div class="inputs">
+<p align="center" style="color:red;">${errorMsg}</p>
 <input type="text" placeholder="Enter your 6-digits" name="qrDigit">
 <input type="hidden" value="${emailId}" name="email"/>
 <button type="submit" class="site-btn">Continue</button>
+<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 </div>
 </form>
 </body>

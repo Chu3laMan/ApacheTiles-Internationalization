@@ -19,18 +19,18 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.test.context.support.WithUserDetails;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.example.demo.entities.Role;
-import com.example.demo.entities.User;
-import com.example.demo.entities.UserInfo;
-import com.example.demo.entities.UserRole;
-import com.example.demo.enums.RoleName;
-import com.example.demo.security.TOTPAuthenticator;
-import com.example.demo.service.QRCodeServiceImpl;
-import com.example.demo.service.RoleService;
-import com.example.demo.service.UserInfoService;
-import com.example.demo.service.UserRoleService;
-import com.example.demo.service.UserService;
-import com.example.demo.util.PlainTextPasswordEncoder;
+import co.chu3la.legume.entities.Role;
+import co.chu3la.legume.entities.User;
+import co.chu3la.legume.entities.UserInfo;
+import co.chu3la.legume.entities.UserRole;
+import co.chu3la.legume.enums.RoleName;
+import co.chu3la.legume.security.TOTPAuthenticator;
+import co.chu3la.legume.service.QRCodeServiceImpl;
+import co.chu3la.legume.service.RoleService;
+import co.chu3la.legume.service.UserInfoService;
+import co.chu3la.legume.service.UserRoleService;
+import co.chu3la.legume.service.UserService;
+import co.chu3la.legume.util.PlainTextPasswordEncoder;
 
 @SpringBootTest
 @AutoConfigureMockMvc
